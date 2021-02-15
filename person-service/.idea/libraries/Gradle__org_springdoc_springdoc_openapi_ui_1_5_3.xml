@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springdoc:springdoc-openapi-ui:1.5.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-ui/1.5.3/ef7e6c0202d38a38cf558075db7be45a554e2f78/springdoc-openapi-ui-1.5.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-ui/1.5.3/5458e13ce19799138d318082b6652cf2ef8a205e/springdoc-openapi-ui-1.5.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

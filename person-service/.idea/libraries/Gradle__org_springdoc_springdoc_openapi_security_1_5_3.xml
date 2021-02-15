@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springdoc:springdoc-openapi-security:1.5.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-security/1.5.3/4f08409f3e14e33cb68bda6bf24741b8cf11ad17/springdoc-openapi-security-1.5.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springdoc/springdoc-openapi-security/1.5.3/3f7926ff3251ba50a049ea21cb0bf4e74d717430/springdoc-openapi-security-1.5.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

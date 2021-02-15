@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sample.person.service.UserDetailServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-15T09:23:19" hostname="MC02XKC6WJG5H" time="0.018">
+  <properties/>
+  <testcase name="testLoadUserByUsername" classname="com.sample.person.service.UserDetailServiceImplTest" time="0.018"/>
+  <testcase name="testLoadUserByInvalidUsername" classname="com.sample.person.service.UserDetailServiceImplTest" time="0.0"/>
+  <system-out><![CDATA[2021-02-15 09:23:19.095  INFO 99154 --- [    Test worker] c.s.p.service.UserDetailsServiceImpl     : Logged in user id - test_user_id, name - test_user
+2021-02-15 09:23:19.095  INFO 99154 --- [    Test worker] c.s.p.service.UserDetailsServiceImpl     : User not found for name - test_user
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

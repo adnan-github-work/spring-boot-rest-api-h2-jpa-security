@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="message-service.contract-server.main" target="1.8" />
+      <module name="message-service.contract-server.test" target="1.8" />
+      <module name="message-service.main" target="1.8" />
+      <module name="message-service.test" target="1.8" />
+      <module name="person-service.main" target="1.8" />
+      <module name="person-service.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sample.person.controller.PersonRestControllerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-02-15T09:23:18" hostname="MC02XKC6WJG5H" time="0.055">
+  <properties/>
+  <testcase name="testGetPersonById" classname="com.sample.person.controller.PersonRestControllerTest" time="0.049"/>
+  <testcase name="testDeletePersonById" classname="com.sample.person.controller.PersonRestControllerTest" time="0.0"/>
+  <testcase name="testCreatePerson" classname="com.sample.person.controller.PersonRestControllerTest" time="0.001"/>
+  <testcase name="testUpdatePersonById" classname="com.sample.person.controller.PersonRestControllerTest" time="0.0"/>
+  <testcase name="testDeletePersonIdBadRequest" classname="com.sample.person.controller.PersonRestControllerTest" time="0.0"/>
+  <testcase name="testUpdatePersonByIdBadRequest" classname="com.sample.person.controller.PersonRestControllerTest" time="0.001"/>
+  <testcase name="testCreatePersonBadRequest" classname="com.sample.person.controller.PersonRestControllerTest" time="0.001"/>
+  <testcase name="testGetPerson" classname="com.sample.person.controller.PersonRestControllerTest" time="0.002"/>
+  <system-out><![CDATA[2021-02-15 09:23:19.028  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController getPersonById
+2021-02-15 09:23:19.028  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.032  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController deletePersonById
+2021-02-15 09:23:19.032  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController createPerson
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController updatePersonById
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController deletePersonById
+2021-02-15 09:23:19.033  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.034  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Request body validation failed
+2021-02-15 09:23:19.034  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController updatePersonById
+2021-02-15 09:23:19.034  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.034  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.034  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Request body validation failed
+2021-02-15 09:23:19.035  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController createPerson
+2021-02-15 09:23:19.035  INFO 99154 --- [    Test worker] com.sample.person.utils.ServiceUtils     : Validating request body
+2021-02-15 09:23:19.035  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Request body validation failed
+2021-02-15 09:23:19.035  INFO 99154 --- [    Test worker] c.s.p.controller.PersonRestController    : Inside PersonRestController getAllPerson
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

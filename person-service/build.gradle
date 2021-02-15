@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven { url 'oss.jfrog.org/artifactory/oss-snapshot-local/' }
+
+    }
+
+    configurations.classpath {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+    }
+}
+
+plugins {
+    id 'java'
+    id("org.springframework.boot") version "2.2.7.RELEASE"
+    id("io.spring.dependency-management") version "1.0.9.RELEASE"
+    id 'base'
+    id 'maven-publish'
+}
+
+
+group 'com.sample.person'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-validation'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+
+    compile 'org.springframework.boot:spring-boot-starter-security'
+
+    compile "org.springdoc:springdoc-openapi-ui:1.5.3"
+    compile "org.springdoc:springdoc-openapi-security:1.5.3"
+    compile("com.auth0:java-jwt:3.4.0")
+
+    compile "org.springframework.boot:spring-boot-starter-jdbc"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "javax.xml.bind:jaxb-api:2.2.12"
+    runtimeOnly("com.h2database:h2")
+
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}
+
+// Docker Build
+task buildDocker(type: Exec, dependsOn: build) {
+    workingDir "build/docker"
+    commandLine 'docker', 'build', '--pull', '-t', artifactName, '.'
+    doFirst {
+        mkdir("build/docker")
+        copy {
+            from "src/main/docker/Dockerfile"
+            into file("build/docker")
+            expand(project.properties)
+        }
+        copy {
+            from(jar) {
+                rename '(.*)-[0-9]+.[0-9]+.[0-9]+.*(.jar)', '$1.jar'
+            }
+            into file("build/docker")
+        }
+    }
+}
+
+build.finalizedBy(buildDocker)
+

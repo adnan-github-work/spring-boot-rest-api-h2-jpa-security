@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sample.person.service.PersonServiceImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-02-15T09:23:19" hostname="MC02XKC6WJG5H" time="0.037">
+  <properties/>
+  <testcase name="testGetPersonById" classname="com.sample.person.service.PersonServiceImplTest" time="0.034"/>
+  <testcase name="testGetAllPerson" classname="com.sample.person.service.PersonServiceImplTest" time="0.001"/>
+  <testcase name="testGetPersonNoDataFound" classname="com.sample.person.service.PersonServiceImplTest" time="0.001"/>
+  <testcase name="testGetPersonByIdNoDataFound" classname="com.sample.person.service.PersonServiceImplTest" time="0.001"/>
+  <system-out><![CDATA[2021-02-15 09:23:19.073  INFO 99154 --- [    Test worker] c.s.person.service.PersonServiceImpl     : Getting person by id: person_id
+2021-02-15 09:23:19.074  INFO 99154 --- [    Test worker] c.s.person.service.PersonServiceImpl     : Retrieved all person data PersonList{[Person{id='null', createdAt=null, modifiedAt=null, firstName='John', age=35, lastName='Wick', favouriteColour='Black'}]}
+2021-02-15 09:23:19.075  INFO 99154 --- [    Test worker] c.s.person.service.PersonServiceImpl     : No person found in database
+2021-02-15 09:23:19.076  INFO 99154 --- [    Test worker] c.s.person.service.PersonServiceImpl     : Getting person by id: person_id
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
